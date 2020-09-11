@@ -1,0 +1,90 @@
+/*Colors used:
+Primary color (White): #ffffff
+Secondary color (Dark-Grey): #635D64
+Secondary color (Purple): #81005B
+Secondary color (Bright-Purple): #EA00A5
+Secondary color (Black): #000000
+Hyperlink color (Blue): blue */
+
+
+body{
+  background-color: #ffffff;
+  font-family: 'Lato', sans-serif; /*If Lato is unavailable it will default to the system's sans-serif font*/
+  font-size: 16px; /*Sets the font size to 16px*/
+  font-weight: 300;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height:1;
+  color: 000000
+}
+
+h1{
+  font-size: 3.5em;
+}
+
+h2{
+  font-size:2.5em;
+}
+
+h3{
+  font-size: 1.75em;
+}
+
+h4{
+  font-size: 1.4em;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: blue;
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #635D64;
+}
+a:hover,
+a:focus {
+  color: #81005B;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: blue;
+}
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #81005B;
+ text-transform: uppercase;
+  color: white; /* needed to override the default link color */
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #81005B; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:active {
+    color: #81005B
+}
+.button.contact {
+  background-color: transparent;
+ color: black;
+ text-transform: uppercase;
+ border: 2px solid #81005B;
+}
+.button.contact:hover {
+  background-color: ffffff;
+  color: #81005B;
+}
+.button.contact:active {
+  background-color: #ff7f50;
+color: #994c30
+}
+
+/*Question for Becca: When do you use a dot vs a hyphen in class names? For example button.contact vs. button-secondary. */
+/*Question for Becca: Why do you have to use a dot before some things on CSS stylesheet and not other times?*/
