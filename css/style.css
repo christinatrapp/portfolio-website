@@ -1,6 +1,7 @@
 /*Colors used:
 Primary color (White): #ffffff
 Secondary color (Dark-Grey): #635D64
+Secondary color (Light-Grey):#D5D4D6
 Secondary color (Purple): #81005B
 Secondary color (Bright-Purple): #EA00A5
 Secondary color (Black): #000000
@@ -68,6 +69,11 @@ a:active { /* selected link */
   border-bottom: 2px solid #81005B; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
+.button:visited{
+      color: #ffffff
+}
+
 .button:active {
     color: #81005B
 }
@@ -88,3 +94,65 @@ color: #994c30
 
 /*Question for Becca: When do you use a dot vs a hyphen in class names? For example button.contact vs. button-secondary. */
 /*Question for Becca: Why do you have to use a dot before some things on CSS stylesheet and not other times?*/
+
+/* Layout styling */
+
+*{
+  box-sizing:border-box
+}
+
+.container{
+  padding: 0 15px;
+}
+
+.row{
+  margin: 25px, 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;}
+
+#hero h1 {
+  text-align: center; /* Centers text - Question, why is there not a dot before h1 here? */
+}
+
+.center{
+  text-align: center;
+}
+
+.logo{
+  max-width: 250px;
+  text-align: center; /* This doesn't seem to center the image of the logo ?? */
+}
+
+header{
+  text-alight: center;
+    background-color: #D5D4D6
+  padding: 10px 0;
+box-shadow: 4px 2px 6px 0px rgba(50, 50, 50, 0.75);
+position: fixed;
+}
+
+nav > ul { /* Why is the forward carrot/arrow used here instead of a dot or dash? */
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+}
+
+#hero {
+  background-color: #D5D4D6;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%
+}
+
+main {
+  padding-top: 133px;
+}
