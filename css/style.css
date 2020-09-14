@@ -120,16 +120,17 @@ color: #994c30
 }
 
 .logo{
-  max-width: 250px;
+  max-width: 80px;
   text-align: center; /* This doesn't seem to center the image of the logo ?? */
 }
 
 header{
-  text-alight: center;
-    background-color: #D5D4D6
+  text-align: center;
+    background-color: #D5D4D6;
   padding: 10px 0;
 box-shadow: 4px 2px 6px 0px rgba(50, 50, 50, 0.75);
 position: fixed;
+width: 100%;
 }
 
 nav > ul { /* Why is the forward carrot/arrow used here instead of a dot or dash? */
@@ -147,12 +148,22 @@ nav > ul > li > a {
 }
 
 #hero {
-  background-color: #D5D4D6;
+  background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
   width: 100%
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 150px;
+}
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  display: inline-block;
+  width: 50px;
+  margin: 0 10px;
 }
