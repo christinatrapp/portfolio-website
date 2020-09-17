@@ -54,7 +54,7 @@ a:visited { /* visited link */
 a:hover,
 a:focus {
   color: #81005B;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: none; /* Used to be underlined but didn't like that */
 }
 a:active { /* selected link */
   color: blue;
@@ -68,6 +68,10 @@ a:active { /* selected link */
   border-radius: 3px;
   border-bottom: 2px solid #81005B; /* width of the border, type, color */
   transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 .button:visited{
@@ -89,7 +93,7 @@ a:active { /* selected link */
 }
 .button.contact:active {
   background-color: #ff7f50;
-color: #994c30
+color: #994c30;
 }
 
 /*Question for Becca: When do you use a dot vs a hyphen in class names? For example button.contact vs. button-secondary. */
@@ -151,7 +155,8 @@ nav > ul > li > a {
   background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
-  width: 100%
+  text-align: center;
+  width: 100%;
 }
 
 main {
@@ -166,4 +171,94 @@ main {
   display: inline-block;
   width: 50px;
   margin: 0 10px;
+}
+
+/* MEDIA QUERIES */
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header {text-align: unset;
+padding: 20px 0 13px;}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
+#hero span {
+  display: block;
+}
+
+.col-md-6 { /* Stands for column, medium screen size, 6 column span (grid layout out of 12 columns)*/
+  width: 50%;
+}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-lg-7 {
+  width: 60%
+}
+
+.col-lg-5 {
+  width: 40%
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+[class*="col-"]{
+  float: left;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#berlin.picture {
+  width: 100%, max-width 100%, height: auto
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0, 50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 15s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px, 48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 30s cloud-move-reverse infinite alternate linear;
 }
