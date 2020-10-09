@@ -133,8 +133,11 @@ color: #994c30;
   text-align: center; /* This doesn't seem to center the image of the logo ?? */
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
 header{
-  text-align: center;
     background-color: #D5D4D6;
   padding: 10px 0;
 box-shadow: 4px 2px 6px 0px rgba(50, 50, 50, 0.75);
@@ -145,10 +148,6 @@ width: 100%;
 nav > ul { /* Why is the forward carrot/arrow used here instead of a dot or dash? */
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
 }
 
 nav > ul > li > a {
@@ -184,13 +183,32 @@ main {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-header {text-align: unset;
-padding: 20px 0 13px;}
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
 
 nav {
   width: auto;
   float: right;
   margin-top: 4px;
+}
+
+/* from example */
+nav > ul > li {
+    display: none;
+  }
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
 
 #hero span {
@@ -219,7 +237,7 @@ Large devices (1024px or larger)
 .col-lg-5 {
   width: 40%
 }
-}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
