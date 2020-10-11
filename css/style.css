@@ -104,7 +104,7 @@ color: #994c30;
 /*Question for Becca: When do you use a dot vs a hyphen in class names? For example button.contact vs. button-secondary. */
 /*Question for Becca: Why do you have to use a dot before some things on CSS stylesheet and not other times?*/
 
-/* Layout styling */
+/* LAYOUT STYLING */
 
 *{
   box-sizing:border-box
@@ -130,29 +130,52 @@ color: #994c30;
 
 .logo{
   max-width: 80px;
-  text-align: center; /* This doesn't seem to center the image of the logo ?? */
-}
-
-.navtoggle, .navtoggle.responsive {
-  position: relative;
+  text-align: center; /
 }
 
 header{
-    background-color: #D5D4D6;
-  padding: 10px 0;
-box-shadow: 4px 2px 6px 0px rgba(50, 50, 50, 0.75);
-position: fixed;
-width: 100%;
+  background-color: #D5D4D6;
+  padding: 10px 0 4px;
+  box-shadow: 4px 2px 6px 0px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%;
 }
 
-nav > ul { /* Why is the forward carrot/arrow used here instead of a dot or dash? */
+/* NAVIGATION */
+
+nav > ul { /* Question: Why is the forward carrot/arrow used here instead of a dot or dash? */
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
+}
+
+/* Added from JS Lesson 2.3 */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+/* Added from JS Lesson 2.3 */
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+/* Added from JS Lesson 2.3 */
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+/* Added from JS Lesson 2.3 */
+.navtoggle.responsive li  {
+  display: block;
 }
 
 #hero {
@@ -194,21 +217,24 @@ nav {
   margin-top: 4px;
 }
 
-/* from example */
-nav > ul > li {
-    display: none;
-  }
+/* from JS lesson 2.3 */
+nav > ul {
+  margin: 1em 0;
+}
 
-.navtoggle li:not(:last-child) {
+/* from JS lesson 2.3 */
+nav > ul > li {
   display: inline-block;
 }
 
-.navtoggle li:last-child {
-  display: none;
-}
+/* from JS Lesson 2.3 */
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
+/* from JS Lesson 2.3 */
+  .navtoggle li:last-child {
+  display: none;
 }
 
 #hero span {

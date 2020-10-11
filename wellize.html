@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="https://kit.fontawesome.com/9e113bc778.js" crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
   <title>Wellize (Mental Health App)</title>
@@ -13,15 +14,18 @@
 <body>
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <img class="logo" src="img/logo.png" alt="Christina Trapp Logo">
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+  </div>
   </header>
 
   <main>
