@@ -21,7 +21,7 @@ h2,
 h3,
 h4 {
   line-height:1;
-  color: 000000
+  color: #000000
 }
 
 h1{
@@ -93,7 +93,7 @@ a:active { /* selected link */
  border: 2px solid #81005B;
 }
 .button.contact:hover {
-  background-color: ffffff;
+  background-color: #ffffff;
   color: #81005B;
 }
 .button.contact:active {
@@ -115,7 +115,7 @@ color: #994c30;
 }
 
 .row{
-  margin: 25px, 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 #work .row {padding-bottom: 25px; border-bottom: 1px solid #4a4a4a;}
@@ -130,7 +130,7 @@ color: #994c30;
 
 .logo{
   max-width: 80px;
-  text-align: center; /
+  text-align: center;
 }
 
 header{
@@ -182,7 +182,7 @@ nav > ul > li > a {
   background-color: #ffffff;
   padding: 20px 0;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -282,7 +282,9 @@ X-large devices (1440px or larger)
 }
 
 #berlin.picture {
-  width: 100%, max-width 100%, height: auto
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes color-change {
