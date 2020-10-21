@@ -7,7 +7,6 @@ Secondary color (Bright-Purple): #EA00A5
 Secondary color (Black): #000000
 Hyperlink color (Blue): blue */
 
-
 body{
   background-color: #ffffff;
   font-family: 'Lato', sans-serif; /*If Lato is unavailable it will default to the system's sans-serif font*/
@@ -70,7 +69,7 @@ a:active { /* selected link */
   color: white; /* needed to override the default link color */
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #81005B; /* width of the border, type, color */
+  border-bottom: 2px solid; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -208,7 +207,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
 header {
   text-align: unset;
-  padding: 20px 0 13px;
+  padding: 20px 0px 13px;
 }
 
 nav {
